@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Campo Minado Animado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="startScreen">
+    <h1>Campo Minado Animado</h1>
+    <button id="startBtn">Vamos começar o jogo</button>
+  </div>
+  <div id="gameContainer" class="hidden">
+    <div id="info">
+      <div class="counter">Minas: <span id="mineCount">10</span></div>
+      <div class="counter">Tempo: <span id="timer">0</span>s</div>
+    </div>
+    <div id="game">
+      <canvas id="board" width="400" height="400"></canvas>
+      <div id="player"></div>
+      <div id="message" class="hidden"></div>
+      <canvas id="particles" width="400" height="400"></canvas>
+    </div>
+  </div>
+  <div id="gameOverScreen" class="hidden">
+    <h1 class="game-over-text">GAME OVER</h1>
+    <p>CONTINUE?</p>
+    <button id="restartBtn">YES</button>
+    <button onclick="window.close()">NO</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
